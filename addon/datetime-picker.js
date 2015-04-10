@@ -187,6 +187,7 @@ export default Ember.Component.extend({
     cancel: function() {
 
       console.log('cancel');
+      this.sendAction('cancelAction');
 
     },
 
