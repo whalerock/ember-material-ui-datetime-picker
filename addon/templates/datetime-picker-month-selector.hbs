@@ -1,0 +1,17 @@
+{{ember-material-ui-datetime-picker-toolbar
+  toggleAction='toggleMonthSelector'
+  navAction='changeYear'
+  label=year
+}}
+
+{{selectedMonth}}
+
+{{#each month in months}}
+  {{ember-material-ui-datetime-picker-button
+    for=this
+    label=month.name
+    selected=month.isSelected
+    action='setMonth'
+    params=month
+  }}
+{{/each}}

@@ -1,0 +1,17 @@
+<div class="time">
+  <div {{action 'changeHour' 1}} class="control">{{fa-icon 'chevron-up'}}</div>
+  <div class="hour">{{selectedHour}}</div>
+  <div {{action 'changeHour' -1}} class="control">{{fa-icon 'chevron-down'}}</div>
+</div>
+
+<div class="time">:</div>
+
+<div class="time">
+  <div {{action 'changeMinute' 1}} class="control">{{fa-icon 'chevron-up'}}</div>
+  <div class="minute">{{selectedMinute}}</div>
+  <div {{action 'changeMinute' -1}} class="control">{{fa-icon 'chevron-down'}}</div>
+</div>
+
+<div class="time">
+  <div {{action 'changePeriod'}} class="period">{{selectedPeriod}}</div>
+</div>

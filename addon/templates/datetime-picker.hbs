@@ -1,0 +1,27 @@
+<div class="calendar">
+
+  <div class="date-display">
+
+    <div class="header">
+      <span>{{selectedDate}}</span>
+    </div>
+
+    <div class="display-date">
+      <div class="month">{{selectedMonth}}</div>
+      <div class="day">{{selectedDay}}</div>
+      <div class="year">{{selectedYear}}</div>
+      {{#if showTime}}
+        <div class="time" {{action 'toggleTimeSelector'}}>{{fa-icon "clock-o"}}{{selectedTime}}</div>
+      {{/if}}
+    </div>
+
+  </div>
+
+  {{component componentPartial}}
+
+</div>
+
+<div class="window-actions">
+  <div {{action 'cancel'}}>{{declineLabel}}</div>
+  <div {{action 'confirm'}}>{{confirmLabel}}</div>
+</div>
